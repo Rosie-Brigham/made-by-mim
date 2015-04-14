@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- <div class="nav-bar full-width">
+
+
+</div> -->
+<div class="nav-bar full-width">
+  <div class="grid grid-pad ">
+    <div class="col-3-12">
+      <div class="content">
+        <a href="/"><h1>Made<span>by</span>Mim</h1></a>
+      </div>
+    </div>
+    <div class="col-9-12">
+      <div class="content menu-list">
+        <ul>
+          <li>Gallery</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= yield %>
+
+</body>
+</html>

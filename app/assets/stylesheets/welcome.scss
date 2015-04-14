@@ -1,0 +1,44 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.main-image {
+  background: url("https://s3-eu-west-1.amazonaws.com/madebymim/homepage/final.jpg") no-repeat center;
+  background-image: no-repeat;
+  /*background-color: #cccccc;*/
+  height: 800px;
+  max-height: 1200px;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+
+  .content {
+    font-family: 'Poiret One';
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 30%;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+    }
+    a:hover, a:focus, a:active {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+  }
+}
