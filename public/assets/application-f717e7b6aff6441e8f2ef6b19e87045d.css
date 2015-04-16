@@ -1,0 +1,766 @@
+@charset "UTF-8";/*full width frame is defined*/
+/* line 4, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_frame.scss */
+.row-full {
+  width: 100%;
+}
+
+/* line 8, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_frame.scss */
+.row-half {
+  width: 50%;
+  padding: 0;
+}
+/* line 1, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar {
+  font-family: 'Poiret One';
+  background-color: #000000;
+  height: 120px;
+}
+/* line 7, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar img {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+/* line 13, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar h1 {
+  font-size: 40px;
+  margin: 0;
+}
+/* line 16, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar h1 span {
+  font-weight: 100;
+}
+/* line 21, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar .menu-list {
+  padding-top: 20px;
+  padding-left: 50%;
+}
+/* line 24, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar .menu-list ul {
+  display: inline;
+  font-size: 20px;
+}
+/* line 27, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar .menu-list ul li {
+  padding-left: 10px;
+  display: inline;
+  list-style-type: none;
+  font-size: 30px;
+}
+/* line 32, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar .menu-list ul li a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+/* line 40, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/_nav.scss */
+.nav-bar .menu-list:hover {
+  text-decoration: underline;
+}
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+}
+
+[class*='col-'] {
+	float: left;
+	/*padding-right: 20px; /* column-space */
+}
+
+.grid {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding-top: 20px;
+	padding-left: 20px; /* grid-space to left */
+	padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.push-right {
+	float: right;
+}
+
+/* Content Columns */
+
+.col-1-1 {
+	width: 100%;
+}
+.col-2-3, .col-8-12 {
+	width: 66.66%;
+}
+
+.col-1-2, .col-6-12 {
+	width: 50%;
+}
+
+.col-1-3, .col-4-12 {
+	width: 33.33%;
+}
+
+.col-1-4, .col-3-12 {
+	width: 25%;
+}
+
+.col-1-5 {
+	width: 20%;
+}
+
+.col-1-6, .col-2-12 {
+	width: 16.667%;
+}
+
+.col-1-7 {
+	width: 14.28%;
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-1-9 {
+	width: 11.1%;
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-1-11 {
+	width: 9.09%;
+}
+
+.col-1-12 {
+	width: 8.33%
+}
+
+/* Layout Columns */
+
+.col-11-12 {
+	width: 91.66%
+}
+
+.col-10-12 {
+	width: 83.333%;
+}
+
+.col-9-12 {
+	width: 75%;
+}
+
+.col-5-12 {
+	width: 41.66%;
+}
+
+.col-7-12 {
+	width: 58.33%
+}
+
+
+
+/* Pushing blocks */
+
+.push-2-3, .push-8-12 {
+	margin-left: 66.66%;
+}
+
+.push-1-2, .push-6-12 {
+	margin-left: 50%;
+}
+
+.push-1-3, .push-4-12 {
+	margin-left: 33.33%;
+}
+
+.push-1-4, .push-3-12 {
+	margin-left: 25%;
+}
+
+.push-1-5 {
+	margin-left: 20%;
+}
+
+.push-1-6, .push-2-12 {
+	margin-left: 16.667%;
+}
+
+.push-1-7 {
+	margin-left: 14.28%;
+}
+
+.push-1-8 {
+	margin-left: 12.5%;
+}
+
+.push-1-9 {
+	margin-left: 11.1%;
+}
+
+.push-1-10 {
+	margin-left: 10%;
+}
+
+.push-1-11 {
+	margin-left: 9.09%;
+}
+
+.push-1-12 {
+	margin-left: 8.33%
+}
+
+
+@media handheld, only screen and (max-width: 767px) {
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 20px; /* grid-space to left */
+		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+	}
+	
+	[class*='col-'] {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 0px;
+		padding-right: 10px; /* column-space */
+	}
+	
+	
+	/* Mobile Layout */
+	
+	[class*='mobile-col-'] {
+		float: left;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		padding-left: 0px;
+		padding-right: 10px; /* column-space */
+		padding-bottom: 0px;
+	}
+	
+	.mobile-col-1-1 {
+		width: 100%;
+	}
+	.mobile-col-2-3, .mobile-col-8-12 {
+		width: 66.66%;
+	}
+
+	.mobile-col-1-2, .mobile-col-6-12 {
+		width: 50%;
+	}
+
+	.mobile-col-1-3, .mobile-col-4-12 {
+		width: 33.33%;
+	}
+
+	.mobile-col-1-4, .mobile-col-3-12 {
+		width: 25%;
+	}
+
+	.mobile-col-1-5 {
+		width: 20%;
+	}
+
+	.mobile-col-1-6, .mobile-col-2-12 {
+		width: 16.667%;
+	}
+
+	.mobile-col-1-7 {
+		width: 14.28%;
+	}
+
+	.mobile-col-1-8 {
+		width: 12.5%;
+	}
+
+	.mobile-col-1-9 {
+		width: 11.1%;
+	}
+
+	.mobile-col-1-10 {
+		width: 10%;
+	}
+
+	.mobile-col-1-11 {
+		width: 9.09%;
+	}
+
+	.mobile-col-1-12 {
+		width: 8.33%
+	}
+
+	/* Layout Columns */
+
+	.mobile-col-11-12 {
+		width: 91.66%
+	}
+
+	.mobile-col-10-12 {
+		width: 83.333%;
+	}
+
+	.mobile-col-9-12 {
+		width: 75%;
+	}
+
+	.mobile-col-5-12 {
+		width: 41.66%;
+	}
+
+	.mobile-col-7-12 {
+		width: 58.33%
+	}
+	
+	.hide-on-mobile {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+}
+
+@import url(//fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
+/* line 5, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.image-container {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 12, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.image-container .product-image {
+  overflow: hidden;
+  height: 600px;
+  width: auto;
+  position: absolute;
+}
+
+/* line 19, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.image-container:last-child, .image-container:nth-last-child(2) {
+  margin: 0;
+}
+
+/* line 24, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.product-description {
+  position: absolute;
+  padding-left: 15%;
+  top: 350px;
+  font-family: 'Raleway', sans-serif;
+  z-index: 99;
+  max-width: 100%;
+  background-color: #043a40;
+  width: 100%;
+  opacity: 0.8;
+}
+/* line 36, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.product-description .product-box {
+  display: none;
+}
+
+/* line 42, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.image-container:hover .product-box {
+  display: block;
+}
+
+/*
+ *  Remodal - v0.6.4
+ *  Flat, responsive, lightweight, easy customizable modal window plugin with declarative state notation and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+/* ==========================================================================
+   Remodal necessary styles
+   ========================================================================== */
+/* Hide scroll bar */
+/* line 63, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+html.remodal-is-locked {
+  overflow: hidden;
+}
+
+/* Anti FOUC */
+/* line 69, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal,
+[data-remodal-id] {
+  visibility: hidden;
+}
+
+/* Necessary styles of the overlay */
+/* line 76, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+/* line 89, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 105, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+/* line 116, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-transform: translateZ(0px);
+}
+
+/* Necessary styles of the modal dialog */
+/* line 123, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal {
+  position: relative;
+  display: inline-block;
+}
+
+/* Anti-zoom. Font-size should be >= 16px. */
+/* line 131, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal select,
+.remodal textarea,
+.remodal input,
+.remodal select:focus,
+.remodal textarea:focus,
+.remodal input:focus {
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Remodal default theme
+   ========================================================================== */
+/* Default theme font */
+/* line 146, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal,
+.remodal * {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Background for effects */
+/* line 153, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-bg {
+  -webkit-transition: -webkit-filter 0.2s ease-out;
+  -moz-transition: -moz-filter 0.2s ease-out;
+  -o-transition: -o-filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
+}
+
+/* line 160, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+body.remodal-is-active .remodal-bg {
+  -webkit-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+}
+
+/* Default theme styles of the overlay */
+/* line 170, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-overlay {
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  background: rgba(33, 36, 46, 0.95);
+}
+
+/* line 180, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+body.remodal-is-active .remodal-overlay {
+  opacity: 1;
+}
+
+/* Default theme styles of the modal dialog */
+/* line 186, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  padding: 35px;
+  -webkit-transition: -webkit-transform 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out, opacity 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out, opacity 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  opacity: 0;
+  color: #182a3c;
+  background: #f4f4f4;
+  background-clip: padding-box;
+}
+
+/* line 212, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+body.remodal-is-active .remodal {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Vertical align of the modal dialog */
+/* line 224, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle;
+}
+
+/* Close button */
+/* line 231, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-close {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+  -webkit-transition: background 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  text-decoration: none;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 249, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-close:after {
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+  font-size: 28px;
+  line-height: 28px;
+  display: block;
+  content: "×";
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: #3e5368;
+}
+
+/* line 267, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-close:hover,
+.remodal-close:active {
+  background: #3e5368;
+}
+
+/* line 272, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-close:hover.remodal-close:after,
+.remodal-close:active.remodal-close:after {
+  color: #f4f4f4;
+}
+
+/* Dialog buttons */
+/* line 279, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-confirm,
+.remodal-cancel {
+  font-size: 10pt;
+  display: inline-block;
+  width: 120px;
+  margin: 0 0 5px 0;
+  padding: 9px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-clip: padding-box;
+}
+
+/* line 302, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-confirm {
+  color: #16a085;
+  border: 2px solid #16a085;
+  background: #f4f4f4;
+}
+
+/* line 308, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-confirm:hover,
+.remodal-confirm:active {
+  color: #f4f4f4;
+  background: #16a085;
+}
+
+/* line 314, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-cancel {
+  color: #c0392b;
+  border: 2px solid #c0392b;
+  background: #f4f4f4;
+}
+
+/* line 320, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.remodal-cancel:hover,
+.remodal-cancel:active {
+  color: #f4f4f4;
+  background: #c0392b;
+}
+
+/* Media queries
+   ========================================================================== */
+@media only screen and (min-width: 641px) {
+  /* line 330, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+  .remodal {
+    max-width: 700px;
+    min-height: 0;
+    margin: 20px auto;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+  }
+}
+/* IE8
+   ========================================================================== */
+/* line 343, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.lt-ie9 .remodal-overlay {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F021242E, endColorstr=#F021242E);
+}
+
+/* line 347, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.lt-ie9 .remodal {
+  width: 700px;
+  min-height: 0;
+  margin: 20px auto;
+}
+
+/* line 353, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.lt-ie9 .remodal-close:after {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 359, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.lt-ie9 .remodal-close:hover,
+.lt-ie9 .remodal-close:active {
+  background: transparent;
+}
+
+/* line 364, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/products.scss */
+.lt-ie9 .remodal-close:hover.remodal-close:after,
+.lt-ie9 .remodal-close:active.remodal-close:after {
+  color: #3e5368;
+}
+/* line 6, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/welcome.scss */
+.main-image {
+  background: url("https://s3-eu-west-1.amazonaws.com/madebymim/homepage/final.jpg") no-repeat center;
+  background-image: no-repeat;
+  /*background-color: #cccccc;*/
+  height: 800px;
+  max-height: 1200px;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+/* line 16, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/welcome.scss */
+.main-image .content {
+  font-family: 'Poiret One';
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  padding-top: 30%;
+}
+/* line 24, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/welcome.scss */
+.main-image .content a {
+  color: #001641;
+  padding-bottom: 30px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+/* line 41, /Users/rosiebrigham/Code/play/shop/app/assets/stylesheets/welcome.scss */
+.main-image .content a:hover, .main-image .content a:focus, .main-image .content a:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+@import "_simplegrid";
+@import "_nav";
+@import "_frame";
