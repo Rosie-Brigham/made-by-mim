@@ -33,12 +33,10 @@
           text-decoration: none;
           color: #e2e2e2;
         }
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
-
-  .menu-list:hover {
-    text-decoration: underline;
-  }
-
 }
