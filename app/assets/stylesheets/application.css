@@ -14,8 +14,8 @@
  *= require_self
  */
 
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(//fonts.googleapis.com/css?family=Poiret+One);
+@import url(//fonts.googleapis.com/css?family=Raleway);
 
 @import "_simplegrid";
 @import "_nav";
