@@ -1,6 +1,6 @@
 module Admin
   class ProductsController < ApplicationController
-    
+
     def index
       @products = Product.all
     end
@@ -15,7 +15,6 @@ module Admin
 
     def create
       @product = Product.new(product_params)
- 
       @product.save
       redirect_to admin_product_path(@product)
     end
@@ -26,7 +25,7 @@ module Admin
 
     def update
       @product = Product.find(params[:id])
- 
+
       if @product.update(product_params)
         redirect_to admin_product_path(@product)
       else
@@ -34,12 +33,11 @@ module Admin
       end
     end
 
-    
+
 
     def destroy
       @product = Product.find(params[:id])
       @product.destroy
-     
       redirect_to admin_products_path
     end
 
