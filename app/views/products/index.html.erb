@@ -1,9 +1,11 @@
 <div class="row-full">
   <% @products.each do |product| %>
-  <div class="col-1-2 image-container remodal-bg">
+  <div class="col-1-2 column">
+    <div class="image-container remodal-bg">
 
-    <a href="#modal"><%= image_tag product.image.url(:large), class: 'product-image' %></a>
+      <a href="#modal"><%= image_tag product.image.url(:large), class: 'product-image' %></a>
 
+    </div>
   </div>
   <div class="remodal" data-remodal-id="modal">
       <%= image_tag product.image.url(:large), class: 'product-image' %>
