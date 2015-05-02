@@ -17,6 +17,6 @@
 /*@import url(//fonts.googleapis.com/css?family=Poiret+One);*/
 @import url(//fonts.googleapis.com/css?family=Raleway);
 
-@import "_simplegrid";
-@import "_nav";
-@import "_frame";
+@import "simplegrid";
+@import "nav";
+@import "frame";
