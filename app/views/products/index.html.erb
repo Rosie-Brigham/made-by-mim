@@ -1,19 +1,24 @@
+<% @products.each do |product| %>
 <div class="row-full">
-  <% @products.each do |product| %>
-  <div class="col-1-2 column">
-    <div class="image-container remodal-bg">
+  <div class="grid grid-pad">
+    <div class="col-4-12 column">
+      <div class="container">
 
-      <a href="#modal"><%= image_tag product.image.url(:large), class: 'product-image' %></a>
+        <%= image_tag product.image.url(:medium), class: 'product-image' %>
 
+      </div>
     </div>
-  </div>
-  <div class="remodal" data-remodal-id="modal">
-      <%= image_tag product.image.url(:large), class: 'product-image' %>
+    <div class="col-6-12 column">
+      <div class="product-desc">
+
       <h2><%= product.name %></h2>
       <p><%= product.medium %></p>
       <p><%= product.description %></p>
       <h4>£<%= product.price %></h4>
+
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>
+<% end %>
 
