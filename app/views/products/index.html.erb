@@ -1,27 +1,3 @@
-<%# @products.each do |product| %>
-  <!-- <div class="row-full product-<%#=product.id%>">
-    <div class="grid grid-pad">
-      <div class="col-4-12 column">
-        <div class="container">
-
-          <%#= image_tag product.image.url(:medium), class: 'product-image' %>
-
-        </div>
-      </div>
-      <div class="col-6-12 column">
-        <div class="product-desc">
-
-        <h2><%#= product.name %></h2>
-        <p><%#= product.medium %></p>
-        <p><%#= product.description %></p>
-        <h4>£<%#= product.price %></h4>
-
-        </div>
-      </div>
-    </div>
-  </div> -->
-<%# end %>
-
 <div class="products-index-wrapper">
   <div class="grid grid-pad">
     <div class="col-4-12 column">
@@ -31,55 +7,29 @@
             <a href="#" rel="<%=product.image.url(:large)%>" class="image description">
               <%= image_tag product.image.url(:thumb), class: 'product-image thumb' %>
               <div class="text hide">
-                <h2><%= product.name %></h2>
-                <h3><%= product.medium %></h3>
-                <span><%= product.description %></span>
-                <h2><%= product.price %></h2>
+                <h2 class="name"><%= product.name %></h2>
+                <h3 class="medium"><%= product.medium %></h3>
+                <span class="info"><%= product.description %></span>
+                <h2 class="price">£<%= product.price %></h2>
               </div>
             </a>
           </div>
         <% end %>
       </div>
     </div>
-    <div class="col-2-12 column">
-      <div id="desc_container" style="display:inline-block;"></div>
+    <div class="col-2-12 column product-info">
+      <div id="desc_container" style="display:inline-block;">
+        <h2 id="title"></h2>
+        <h3 id="medium"></h3>
+        <span id="info"></span>
+        <h2 id="price"></h2>
+      </div>
     </div>
     <div class="col-6-12 column">
       <div id="image" class="image-display" style="display:inline-block;">
         <%= image_tag @products.first.image.url(:large), class: 'product-image thumb' %>
       </div>
-
-      
     </div>
   </div>
 </div>
-<script type="text/javascript">
-  $(function() {
-  $(".image").click(function() {
-  var image = $(this).attr("rel");
-  $('#image').hide();
-  $('#image').fadeIn('slow');
-  $('#image').html('<img src="' + image + '"/>');
-
-  return false;
-      });
-  });
-</script>
-
-<script type="text/javascript">
-   $(function() {
-   $(".description").click(function() {
-   var desc = $(this).find('.text');
-   console.log(desc)
-
-    $('#desc_container').hide();
-    $('#desc_container').fadeIn('slow');
-    $('#desc_container').text(desc.text());
-
-    // var desc_container = document.getElementsByClassName("desc_container");
-    // $(desc_container).text(desc);
-   // return false;
-       });
-   });
-</script>
 

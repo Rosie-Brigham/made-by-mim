@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  .product-image {
+    width: auto;
+    height: auto;
+  }
+}
+
+.column {
+  margin-bottom: 30px;
+}
+
+.admin-index {
+  font-family: Helvetica, sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
